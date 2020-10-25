@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace Attendance.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
